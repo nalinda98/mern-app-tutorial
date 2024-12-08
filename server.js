@@ -4,7 +4,6 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
 const sampleExport = require("./functions");
-const { fetchDatesEnable } = require("./controllers/dateController");
 const port = process.env.PORT || 3001;
 
 const app = express();
@@ -20,7 +19,7 @@ mongoose
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
-app.get("/dateEnable", fetchDatesEnable);
+app.get("/dateEnable", sampleExport);
 
 // production script
 app.use(express.static("./frontend/build"));
