@@ -9,7 +9,7 @@ export const generateAccessToken = (user) => {
         role: user.role,
         name: user.name
     }
-    return Jwt.sign(payload,process.env.JWT_SECRET_KEY,{expiresIn : '1y'});
+    return Jwt.sign(payload,"P6Y7EHgigTXou6pu+J3q0w==",{expiresIn : '1y'});
 }
 
 export const generateRefreshToken = (user) => {
@@ -19,7 +19,7 @@ export const generateRefreshToken = (user) => {
         role: user.role,
         name: user.name
     }
-    const refreshToken = Jwt.sign(payload,process.env.JWT_REFRESH_KEY);
+    const refreshToken = Jwt.sign(payload,"S/1+HYYdkmRCP2C69MQBqg==");
     const token = new RefreshToken({
         token: refreshToken,
         userId: user._id

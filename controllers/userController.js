@@ -347,7 +347,7 @@ export const token = async (req, res) => {
   const token = req.body.refreshToken;
   if (token == null)
     return res.status(401).json({ message: "refresh token is null" });
-  Jwt.verify(token, process.env.JWT_REFRESH_KEY, (err, user) => {
+  Jwt.verify(token, "S/1+HYYdkmRCP2C69MQBqg==", (err, user) => {
     if (err) {
       return res.sendStatus(403);
     }

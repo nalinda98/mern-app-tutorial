@@ -84,7 +84,7 @@ router.post("/verify", async (req, res) => {
   try {
     const token = req.header("Authorization").split(" ")[1];
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    const decoded = jwt.verify(token, "P6Y7EHgigTXou6pu+J3q0w==");
 
     if (decoded) {
       return res.status(200).json({ message: "User is authenticated" });

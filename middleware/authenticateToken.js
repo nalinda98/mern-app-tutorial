@@ -9,7 +9,7 @@ export const authenticateToken = (req, res, next) => {
         return res.sendStatus(401);
     }
 
-    Jwt.verify(token, process.env.JWT_SECRET_KEY, (err, user) => {
+    Jwt.verify(token, "P6Y7EHgigTXou6pu+J3q0w==", (err, user) => {
         if (err) {
             return res.sendStatus(403).json({ message: "Invalid token" });
         };
