@@ -4,27 +4,48 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
-import user from "./routes/user.route.js";
-import booking from "./routes/booking.route.js";
-import dateEnable from "./routes/date.route.js";
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-app.use("/api/user", user);
-app.use("/api/booking", booking);
-app.use("/api/dateEnable", dateEnable);
-
 mongoose
-  .connect("mongodb+srv://user1:h6BlnkE5N9Boksmt@cluster0.i9rx6cp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
-app.use(express.static("./frontend/build"));
+//db schema
+const userSchema = mongoose.Schema({
+  name: String,
+  lastName: String,
+});
+
+//db model
+const User = new mongoose.model("User", userSchema);
+
+app.get("/get-users", (req, res) => {
+  User.find()
+    .then((users) => res.json(users))
+    .catch((err) => console.log(err));
+});
+
+app.post("/create", (req, res) => {
+  //save to mongodb and send response
+  const newUser = new User({
+    name: req.body.name,
+    lastName: req.body.lastName,
+  });
+
+  newUser
+    .save()
+    .then((user) => res.json(user))
+    .catch((err) => console.log(err));
+});
+
+app.use(express.static("./client/build"));
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
 app.listen(port, () => {
