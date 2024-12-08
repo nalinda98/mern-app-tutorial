@@ -6,10 +6,10 @@ const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
 const { fetchDatesEnable } = require("./controllers/dateController.js");
-const { authenticateToken } = require("./middleware/authenticateToken.js");
-const { isSuperAdmin, isAdmin } = require("./middleware/isAdmin.js");
-const { addBooking, fetchBookings, fetchBookingDetails, updateBookingStatus } = require("./controllers/bookingController.js");
-const { getUsers, getUserById, register, registerG, login, logout, token, verifyUser } = require("./controllers/userController.js");
+// const { authenticateToken } = require("./middleware/authenticateToken.js");
+// const { isSuperAdmin, isAdmin } = require("./middleware/isAdmin.js");
+// const { addBooking, fetchBookings, fetchBookingDetails, updateBookingStatus } = require("./controllers/bookingController.js");
+// const { getUsers, getUserById, register, registerG, login, logout, token, verifyUser } = require("./controllers/userController.js");
 const app = express();
 
 app.use(express.json());
