@@ -3,8 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
+const sampleExport = require("./functions");
 const port = process.env.PORT || 3001;
-const DateEnable = require("./models/date.model");
 
 const app = express();
 
@@ -19,15 +19,7 @@ mongoose
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
-app.get("/dateEnable", async (req, res) => {
-  try {
-    const dates = await DateEnable.find().populate("createdBy", "name");
-    res.status(200).json({ dates, success: true });
-  } catch (error) {
-    console.error("Error fetching dates:", error);
-    res.status(500).json({ message: "error", success: false });
-  }
-});
+app.get("/dateEnable", sampleExport);
 
 // production script
 app.use(express.static("./frontend/build"));
