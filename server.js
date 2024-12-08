@@ -5,15 +5,12 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-// const { fetchDatesEnable } = require("./controllers/dateController.js");
-const router = require("./routes/route.index.js");
+const { fetchDatesEnable } = require("./controllers/dateController.js");
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
-
-app.use("/api", router);
 
 mongoose
   .connect(process.env.MONGO_URI)
@@ -35,7 +32,7 @@ app.get("/get-users", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-// app.get("/dateEnable" , fetchDatesEnable);
+app.get("/dateEnable" , fetchDatesEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
