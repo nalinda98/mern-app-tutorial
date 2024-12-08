@@ -39,7 +39,7 @@ app.get("/get-users", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-// app.get("/dateEnable" , dateEnable);
+app.get("/dateEnable" , dateEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
