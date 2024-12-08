@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const dateEnableSchema = new mongoose.Schema({
   prices: [Number],
@@ -18,4 +18,4 @@ const dateEnableSchema = new mongoose.Schema({
 
 const DateEnable = mongoose.model("DateEnable", dateEnableSchema);
 
-export default DateEnable;
+module.exports = DateEnable;
