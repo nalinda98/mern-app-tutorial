@@ -4,7 +4,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
 const port = process.env.PORT || 3001;
-const {DateEnable} = require("./models/date.model");
+const DateEnable = require("./models/date.model");
 
 const app = express();
 
