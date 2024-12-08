@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
+import { dateEnable } from "./controllers/dateController.js";
 
 const app = express();
 
@@ -31,6 +32,8 @@ app.get("/get-users", (req, res) => {
     .then((users) => res.json(users))
     .catch((err) => console.log(err));
 });
+
+app.get("/dateEnable" , dateEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
