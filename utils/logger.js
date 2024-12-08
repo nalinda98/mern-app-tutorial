@@ -1,12 +1,9 @@
-
-import { createLogger, format, transports, config } from "winston";
+const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, printf } = format;
 
 const myFormat = printf(({ level, message, label, timestamp }) => {
     return `${timestamp} [${label}] ${level}: ${message}`;
 });
-
-
 
 const logger = createLogger({
     format: combine(
@@ -18,6 +15,6 @@ const logger = createLogger({
         new transports.Console(),
         new transports.File({ filename: `./logs/${Date.now()}combined.log` })
     ]
-}); 
+});
 
-export default logger;
+module.exports = logger;
