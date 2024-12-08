@@ -3,7 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
-const {  fetchDatesEnable } = require("./controllers/dateController");
 const port = process.env.PORT || 3001;
 
 const app = express();
@@ -18,7 +17,11 @@ mongoose
   .catch((err) => console.log(err));
 
 
-app.get("/dateEnable" , fetchDatesEnable);
+app.get("/dateEnable" , 
+  (req, res) => {
+    res.send("Hello World!");
+  }
+);
 
 // production script
 app.use(express.static("./frontend/build"));
