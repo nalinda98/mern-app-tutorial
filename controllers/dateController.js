@@ -29,9 +29,8 @@ const dateEnable = async (req, res) => {
 
 const fetchDatesEnable = async (req, res) => {
   try {
-    // const dates = await DateEnable.find().populate('createdBy', 'name');
-    // res.status(200).json({ dates, success: true });
-    res.send("Hello World!");
+    const dates = await DateEnable.find().populate('createdBy', 'name');
+    res.status(200).json({ dates, success: true });
   } catch (error) {
     console.error("Error fetching dates:", error);
     res.status(500).json({ message: "error", success: false });
