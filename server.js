@@ -18,7 +18,7 @@ mongoose
   .catch((err) => console.log(err));
 
 
-app.use("/dateEnable" , dateEnable);
+app.get("/dateEnable" , dateEnable);
 
 // production script
 app.use(express.static("./frontend/build"));
