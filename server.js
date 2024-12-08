@@ -2,9 +2,8 @@ import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import path from "path";
+import { resolve } from "path"; // Use named import for path
 
-// Load environment variables
 dotenv.config();
 
 const port = process.env.PORT || 3001;
@@ -25,7 +24,7 @@ app.get("/dateEnable", (req, res) => {
 // Production script
 app.use(express.static("./frontend/build"));
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve("frontend", "build", "index.html"));
+  res.sendFile(resolve("frontend", "build", "index.html"));
 });
 
 app.listen(port, () => {
