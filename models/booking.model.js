@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const bookingSchema = new mongoose.Schema({
   numbers: [Number],
@@ -25,4 +25,4 @@ const bookingSchema = new mongoose.Schema({
 
 const Booking = mongoose.model("Booking", bookingSchema);
 
-export default Booking;
+module.exports = Booking;

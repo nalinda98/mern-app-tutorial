@@ -1,22 +1,25 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
-const tokenSchema = new mongoose.Schema({
+const tokenSchema = new mongoose.Schema(
+  {
     token: {
-        type: String,
-        require: true
+      type: String,
+      require: true,
     },
-    userId:{
-        type: String,
-        require: true,
-        unique: true
+    userId: {
+      type: String,
+      require: true,
+      unique: true,
     },
-    expireAt:{
-        type: Date,
-        default: Date.now,
-        index: {expires: '24h'}
-    }  
-},{timestamps:true})
+    expireAt: {
+      type: Date,
+      default: Date.now,
+      index: { expires: "24h" },
+    },
+  },
+  { timestamps: true }
+);
 
-const RefreshToken = mongoose.model('Tokens', tokenSchema);
+const RefreshToken = mongoose.model("Tokens", tokenSchema);
 
-export default RefreshToken; 
+module.exports = RefreshToken;

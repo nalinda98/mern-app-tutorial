@@ -5,7 +5,11 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-const { fetchDatesEnable } = require("./controllers/dateController.js");
+const { fetchDatesEnable, dateEnable } = require("./controllers/dateController.js");
+const { authenticateToken } = require("./middleware/authenticateToken.js");
+const { isSuperAdmin, isAdmin } = require("./middleware/isAdmin.js");
+const { addBooking, fetchBookings, fetchBookingDetails, updateBookingStatus } = require("./controllers/bookingController.js");
+const { getUsers, getUserById, register, registerG, login, logout, token, verifyUser } = require("./controllers/userController.js");
 const app = express();
 
 app.use(express.json());
@@ -17,35 +21,20 @@ mongoose
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
-//db schema
-const userSchema = mongoose.Schema({
-  name: String,
-  lastName: String,
-});
-
-//db model
-const User = new mongoose.model("User", userSchema);
-
-app.get("/get-users", (req, res) => {
-  User.find()
-    .then((users) => res.json(users))
-    .catch((err) => console.log(err));
-});
-
 app.get("/dateEnable" , fetchDatesEnable);
-
-app.post("/create", (req, res) => {
-  //save to mongodb and send response
-  const newUser = new User({
-    name: req.body.name,
-    lastName: req.body.lastName,
-  });
-
-  newUser
-    .save()
-    .then((user) => res.json(user))
-    .catch((err) => console.log(err));
-});
+app.post("/dateEnable", authenticateToken, isSuperAdmin, dateEnable);
+app.post("/booking", authenticateToken, isAdmin, addBooking);
+app.get("/booking", fetchBookings);
+app.get("/booking/details", authenticateToken, isAdmin, fetchBookingDetails);
+app.post("/booking/updateStatus", authenticateToken, isAdmin, updateBookingStatus);
+app.get("/user/getUsers", getUsers);
+app.get("/user/getUser/:id", getUserById);
+app.post ("/user/register", register);
+app.post("/user/googleRegister", registerG);
+app.post("/user/login", login);
+app.get("/user/logout", authenticateToken, logout);
+app.post("/user/refresh", token);
+app.post("/user/verify", verifyUser);
 
 app.use(express.static("./frontend/build"));
 app.get("*", (req, res) => {

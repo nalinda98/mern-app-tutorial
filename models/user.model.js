@@ -1,11 +1,10 @@
-import mongoose from "mongoose";
-import validator from "validator";
+const mongoose = require("mongoose");
+const validator = require("validator");
 
 const userSchema = new mongoose.Schema(
   {
     password: {
       type: String,
-
       validate: {
         validator: function (value) {
           return value.length >= 6;
@@ -26,17 +25,16 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, "Name is required"],
     },
-    dueDate:{
-      type:Date,
+    dueDate: {
+      type: Date,
     },
     role: {
       type: String,
       default: "user",
       enum: ["user", "admin", "super-admin", "staff"],
     },
-    
-    contact:{
-      type:String,
+    contact: {
+      type: String,
       // required:[true,"Contact is required"]
     },
     otp: {
@@ -46,11 +44,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       // required: [true, "Phone is required"],
     },
-    
   },
   { timestamps: true }
 );
 
 const User = mongoose.model("User", userSchema);
 
-export default User;
+module.exports = User;
