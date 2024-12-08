@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-
+const { fetchDatesEnable } = require("./controllers/dateController.js");
 const app = express();
 
 app.use(express.json());
@@ -32,7 +32,7 @@ app.get("/get-users", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-app.get("/dateEnable" , dateEnable);
+app.get("/dateEnable" , fetchDatesEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
