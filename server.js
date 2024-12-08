@@ -4,11 +4,13 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
+import dateEnable from "./routes/booking.route.js";
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
 mongoose
   .connect(process.env.MONGO_URI)
@@ -29,6 +31,9 @@ app.get("/get-users", (req, res) => {
     .then((users) => res.json(users))
     .catch((err) => console.log(err));
 });
+
+
+app.use("/dateEnable", dateEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
