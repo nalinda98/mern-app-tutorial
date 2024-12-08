@@ -19,6 +19,37 @@ module.exports = {
     }
   },
 
+  getUsersDetails: async (req, res) => {
+    logger.info(
+      `userController.js || getUsersDetailsForMembership || Getting all users!`
+    );
+    try {
+      const users = await User.find(
+        {}, // Filter to get users with membershipNumber as null
+        { name: 1, _id: 1, email: 1, role: 1 } // Projection to include only name, _id, and email fields
+      ).sort({ name: 1 });
+      res.status(200).json(users);
+    } catch (err) {
+      res.status(400).json({ message: err });
+    }
+  },
+
+  updateMembersDetails : async (req, res) => {
+    logger.info(
+      `userController.js || addMembership || Adding membership to user! `
+    );
+    try {
+      const { role,id } = req.body;
+      const user = await User.findById(id);
+      user.role = role;
+      await user.save();
+      res.status(200).json(user.name + " user has been updated");
+    } catch (err) {
+      console.log(err);
+      res.status(400).json({ message: err });
+    }
+  },
+
   verifyUser : async (req, res) => {
     try {
       const token = req.header("Authorization").split(" ")[1];

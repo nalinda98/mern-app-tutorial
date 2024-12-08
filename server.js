@@ -9,7 +9,7 @@ const { fetchDatesEnable, dateEnable } = require("./controllers/dateController.j
 const { authenticateToken } = require("./middleware/authenticateToken.js");
 const { isSuperAdmin, isAdmin } = require("./middleware/isAdmin.js");
 const { addBooking, fetchBookings, fetchBookingDetails, updateBookingStatus } = require("./controllers/bookingController.js");
-const { getUsers, getUserById, register, registerG, login, logout, token, verifyUser } = require("./controllers/userController.js");
+const { getUsers, getUserById, register, registerG, login, logout, token, verifyUser, getUsersDetails, updateMembersDetails } = require("./controllers/userController.js");
 const app = express();
 
 app.use(express.json());
@@ -39,6 +39,8 @@ app.post("/user/login", login);
 app.get("/user/logout", authenticateToken, logout);
 app.post("/user/refresh", token);
 app.post("/user/verify", verifyUser);
+app.get("/user/getUsersDetails", getUsersDetails);
+app.put("/user/updateMemberDetails", authenticateToken, isAdmin, updateMembersDetails);
 
 app.use(express.static("./frontend/build"));
 app.get("*", (req, res) => {
