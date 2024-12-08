@@ -4,11 +4,13 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
+app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
 mongoose
   .connect(process.env.MONGO_URI)
