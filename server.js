@@ -34,7 +34,7 @@ app.get("/get-users", (req, res) => {
 });
 
 
-app.use("/dateEnable", dateEnable);
+app.use("/api/dateEnable", dateEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
