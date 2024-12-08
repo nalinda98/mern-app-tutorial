@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require("path");
-const { dateEnable } = require("./controllers/dateController");
+const {  fetchDatesEnable } = require("./controllers/dateController");
 const port = process.env.PORT || 3001;
 
 const app = express();
@@ -13,12 +13,12 @@ app.use(cors());
 
 
 mongoose
-  .connect(process.env.MONGO_URI || "mongodb://localhost:27017/")
+  .connect(process.env.MONGO_URI || "mongodb+srv://user1:user@cluster0.mmap8.mongodb.net/testDataDev")
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
 
-app.get("/dateEnable" , dateEnable);
+app.get("/dateEnable" , fetchDatesEnable);
 
 // production script
 app.use(express.static("./frontend/build"));
