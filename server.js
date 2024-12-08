@@ -5,9 +5,6 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-const { authenticateToken } = require("./middleware/authenticateToken");
-const { isSuperAdmin } = require("./middleware/isAdmin");
-const { dateEnable, fetchDatesEnable } = require("./controllers/dateController");
 
 const app = express();
 
@@ -20,8 +17,33 @@ mongoose
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
-app.post("/", authenticateToken, isSuperAdmin , dateEnable);
-app.get("/", fetchDatesEnable);
+//db schema
+const userSchema = mongoose.Schema({
+  name: String,
+  lastName: String,
+});
+
+//db model
+const User = new mongoose.model("User", userSchema);
+
+app.get("/get-users", (req, res) => {
+  User.find()
+    .then((users) => res.json(users))
+    .catch((err) => console.log(err));
+});
+
+app.post("/create", (req, res) => {
+  //save to mongodb and send response
+  const newUser = new User({
+    name: req.body.name,
+    lastName: req.body.lastName,
+  });
+
+  newUser
+    .save()
+    .then((user) => res.json(user))
+    .catch((err) => console.log(err));
+});
 
 app.use(express.static("./frontend/build"));
 app.get("*", (req, res) => {
