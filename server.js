@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-import { dateEnable } from "./controllers/dateController.js";
+const { dateEnable } = require("./controllers/dateController");
 
 const app = express();
 
