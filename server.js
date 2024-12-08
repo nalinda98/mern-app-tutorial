@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-const { fetchDatesEnable } = require("./controllers/dateController");
 
 const app = express();
 
@@ -26,8 +25,6 @@ const userSchema = mongoose.Schema({
 
 //db model
 const User = new mongoose.model("User", userSchema);
-
-app.get ("/", fetchDatesEnable);
 
 app.get("/get-users", (req, res) => {
   User.find()
