@@ -53,6 +53,12 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send({ message: "Something broke!", error: err.message });
+});
+
+
 app.listen(port, () => {
   console.log(`Server is running on post ${port}`);
 });
