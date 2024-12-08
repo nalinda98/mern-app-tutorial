@@ -6,6 +6,12 @@ const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
 // const { dateEnable } = require("./controllers/dateController.js");
+let dateEnable;
+try {
+    dateEnable = require("./controllers/dateController.js").dateEnable;
+} catch (error) {
+    console.error("Error importing dateController:", error.message);
+}
 
 const app = express();
 
