@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const User = require("./user.model");
 
 const bookingSchema = new mongoose.Schema({
   numbers: [Number],
@@ -7,7 +8,7 @@ const bookingSchema = new mongoose.Schema({
   reserverName: String,
   approvedBy: {
     type: mongoose.Types.ObjectId,
-    ref: "User",
+    ref: User,
   },
   status: {
     type: String,
