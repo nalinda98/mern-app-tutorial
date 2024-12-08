@@ -5,7 +5,9 @@ const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
 const bodyParser = require("body-parser");
-const { fetchDatesEnable, dateEnable } = require("./controllers/dateController.js");
+const { fetchDatesEnable, 
+  
+ } = require("./controllers/dateController.js");
 // const { authenticateToken } = require("./middleware/authenticateToken.js");
 // const { isSuperAdmin, isAdmin } = require("./middleware/isAdmin.js");
 // const { addBooking, fetchBookings, fetchBookingDetails, updateBookingStatus } = require("./controllers/bookingController.js");
@@ -22,7 +24,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.get("/dateEnable" , fetchDatesEnable);
-app.post("/dateEnable", authenticateToken, isSuperAdmin, dateEnable);
+// app.post("/dateEnable", authenticateToken, isSuperAdmin, dateEnable);
 // app.post("/booking", authenticateToken, isAdmin, addBooking);
 // app.get("/booking", fetchBookings);
 // app.get("/booking/details", authenticateToken, isAdmin, fetchBookingDetails);
