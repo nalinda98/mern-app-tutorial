@@ -33,9 +33,9 @@ const fetchDatesEnable = async (req, res) => {
     res.status(200).json({ dates, success: true });
   } catch (error) {
     console.error("Error fetching dates:", error);
-    res.status(500).json({ message: "Error fetching dates", success: false });
+    res.status(500).json({ message: error, success: false });
   }
-};
+}; 
 
 module.exports = {
   dateEnable,
