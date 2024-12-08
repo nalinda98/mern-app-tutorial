@@ -3,8 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
-const bodyParser = require("body-parser");
-import dateEnable from "./routes/booking.route.js";
 const path = require("path");
 
 const app = express();
@@ -14,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
 mongoose
-  .connect("mongodb+srv://user1:user@cluster0.mmap8.mongodb.net/testDataDev")
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
@@ -33,8 +31,6 @@ app.get("/get-users", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-
-app.use("/api/dateEnable", dateEnable);
 
 app.post("/create", (req, res) => {
   //save to mongodb and send response
