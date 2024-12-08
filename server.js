@@ -4,8 +4,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const bodyParser = require("body-parser");
-const path = require("path");
 import dateEnable from "./routes/booking.route.js";
+const path = require("path");
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect("mongodb+srv://user1:user@cluster0.mmap8.mongodb.net/testDataDev")
   .then(() => console.log("Database is connected..."))
   .catch((err) => console.log(err));
 
