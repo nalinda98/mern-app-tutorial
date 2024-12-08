@@ -4,7 +4,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3001;
 const path = require("path");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 // const {
 //   fetchDatesEnable,
 //   dateEnable,
@@ -33,7 +33,7 @@ const bodyParser = require("body-parser");
 
 app.use(express.json());
 app.use(cors());
-app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
 mongoose
   .connect(process.env.MONGO_URI, {
