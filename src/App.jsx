@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Aos from "aos";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import WOW from "wowjs";
 
 import {
   HashRouter as Router,
@@ -58,14 +59,16 @@ function App() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
   return (
     <>
       <style>{`html { scroll-behavior: smooth; }`}</style>
       <Router>
         <ScrollToTop />
         <RouteChangeLoader />
-        <Navbar />
+        {/* <Navbar /> */}
         <Suspense fallback={<Preloader />}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -79,8 +82,8 @@ function App() {
             <Route path="/packages/Tour5Days" element={<Tour5Days />} />
           </Routes>
         </Suspense>
-        <FloatingDock />
-        <ScrollToTopButton />
+        {/* <FloatingDock /> */}
+        {/* <ScrollToTopButton /> */}
         <Footer />
       </Router>
     </>

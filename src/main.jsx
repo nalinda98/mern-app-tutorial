@@ -2,12 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import './index.css'
 import App from "./App.jsx";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
-import smoothscroll from 'smoothscroll-polyfill';
+import "animate.css/animate.min.css";
+import smoothscroll from "smoothscroll-polyfill";
 
 // Kick it off in index.js
 smoothscroll.polyfill();
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
