@@ -16,6 +16,7 @@ import {
 import { FloatingDock } from "./components/FloatingDock";
 import ScrollToTopButton from "./components/ScrollToTopBtn";
 import Preloader from "./components/Preloader";
+import Topbar from "./components/Topbar";
 
 // Lazy imports (code-splitting)
 const Home = lazy(() => import("./pages/Home"));
@@ -68,7 +69,8 @@ function App() {
       <Router>
         <ScrollToTop />
         <RouteChangeLoader />
-        {/* <Navbar /> */}
+        <Topbar />
+        <Navbar />
         <Suspense fallback={<Preloader />}>
           <Routes>
             <Route path="/" element={<Home />} />

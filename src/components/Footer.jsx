@@ -2,157 +2,177 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer
-      className="ftco-footer bg-bottom ftco-no-pt"
-      style={{ backgroundImage: "url(/images/bg_3.jpg)" }}
-    >
-      <div className="container">
-        <div className="row mb-5">
-          {/* About Us */}
-          <div className="col-md pt-5">
-            <div className="ftco-footer-widget pt-md-5 mb-4">
-              <h2 className="ftco-heading-2">About Us</h2>
-              <p>
-                At Kandy Tours, we offer personalized tours across the stunning
-                island of Sri Lanka — from the golden beaches of the south to
-                the lush tea plantations in the hill country and the ancient
-                ruins of the Cultural Triangle. 
-              </p>
-              <ul className="ftco-footer-social list-unstyled float-md-left float-lft">
-                {/* <li>
-                  <a href="#">
-                    <span className="fa fa-twitter" />
-                  </a>
-                </li> */}
-                <li>
-                  <a href="https://www.facebook.com/kandy.tours.0777284460">
-                    <span className="fa fa-facebook" />
-                  </a>
-                </li>
-                {/* <li>
-                  <a href="#">
-                    <span className="fa fa-instagram" />
-                  </a>
-                </li> */}
-              </ul>
+    <>
+      <div
+        className="container-fluid bg-dark text-light mt-5 wow fadeInUp"
+        data-wow-delay="0.1s"
+      >
+        <div className="container">
+          <div className="row gx-5">
+            <div className="col-lg-4 col-md-6 footer-about">
+              <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                <a href="/" className="navbar-brand">
+                  <h1 className="m-0 text-white">
+                    <i className="fa fa-user-tie me-2"></i>Startup
+                  </h1>
+                </a>
+                <p className="mt-3 mb-4">
+                  Lorem diam sit erat dolor elitr et, diam lorem justo amet
+                  clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum
+                  sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.
+                </p>
+                <form action="">
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control border-white p-3"
+                      placeholder="Your Email"
+                    />
+                    <button className="btn btn-dark">Sign Up</button>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="col-md pt-5 border-left">
-            <div className="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-              <h2 className="ftco-heading-2">Quick Links</h2>
-              <ul className="list-unstyled">
-                <li>
-                  <a href="/" className="py-2 d-block">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" className="py-2 d-block">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/destinations" className="py-2 d-block">
-                    Destinations
-                  </a>
-                </li>
-                <li>
-                  <a href="/gallery" className="py-2 d-block">
-                    Gallery
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="py-2 d-block">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Experience */}
-          {/* <div className="col-md pt-5 border-left">
-            <div className="ftco-footer-widget pt-md-5 mb-4">
-              <h2 className="ftco-heading-2">Experience</h2>
-              <ul className="list-unstyled">
-                {[
-                  "Adventure",
-                  "Hotel and Restaurant",
-                  "Beach",
-                  "Nature",
-                  "Camping",
-                  "Party",
-                ].map((item, i) => (
-                  <li key={i}>
-                    <a href="#" className="py-2 d-block">
-                      {item}
+            <div className="col-lg-8 col-md-6">
+              <div className="row gx-5">
+                <div className="col-lg-4 col-md-12 pt-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="text-light mb-0">Get In Touch</h3>
+                  </div>
+                  <div className="d-flex mb-2">
+                    <i className="bi bi-geo-alt text-primary me-2"></i>
+                    <p className="mb-0">123 Street, New York, USA</p>
+                  </div>
+                  <div className="d-flex mb-2">
+                    <i className="bi bi-envelope-open text-primary me-2"></i>
+                    <p className="mb-0">info@example.com</p>
+                  </div>
+                  <div className="d-flex mb-2">
+                    <i className="bi bi-telephone text-primary me-2"></i>
+                    <p className="mb-0">+012 345 67890</p>
+                  </div>
+                  <div className="d-flex mt-4">
+                    <a className="btn btn-primary btn-square me-2" href="#">
+                      <i className="fab fa-twitter fw-normal"></i>
                     </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div> */}
-
-          {/* Contact Info */}
-          <div className="col-md pt-5 border-left">
-            <div className="ftco-footer-widget pt-md-5 mb-4">
-              <h2 className="ftco-heading-2">Have a Questions?</h2>
-              <div className="block-23 mb-3">
-                <ul>
-                  <li>
-                    <span className="icon fa fa-map-marker" />
-                    <span className="text">
-                      135 A, Bogahalanda Walawwa, Galagedara
-                    </span>
-                  </li>
-                  <li>
-                    <a href="tel://+94777284460">
-                      <span className="icon fa fa-phone" />
-                      <span className="text">+94 77 72 84 460</span>
+                    <a className="btn btn-primary btn-square me-2" href="#">
+                      <i className="fab fa-facebook-f fw-normal"></i>
                     </a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@kandytours.lk">
-                      <span className="icon fa fa-paper-plane" />
-                      <span className="text">info@kandytours.lk</span>
+                    <a className="btn btn-primary btn-square me-2" href="#">
+                      <i className="fab fa-linkedin-in fw-normal"></i>
                     </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://kandytours.lk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span className="icon fa fa-globe" />
-                      <span className="text">kandytours.lk</span>
+                    <a className="btn btn-primary btn-square" href="#">
+                      <i className="fab fa-instagram fw-normal"></i>
                     </a>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="text-light mb-0">Quick Links</h3>
+                  </div>
+                  <div className="link-animated d-flex flex-column justify-content-start">
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Home
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      About Us
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>Our
+                      Services
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Meet The Team
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Latest Blog
+                    </a>
+                    <a className="text-light" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                  <div className="section-title section-title-sm position-relative pb-3 mb-4">
+                    <h3 className="text-light mb-0">Popular Links</h3>
+                  </div>
+                  <div className="link-animated d-flex flex-column justify-content-start">
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Home
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      About Us
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>Our
+                      Services
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Meet The Team
+                    </a>
+                    <a className="text-light mb-2" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Latest Blog
+                    </a>
+                    <a className="text-light" href="#">
+                      <i className="bi bi-arrow-right text-primary me-2"></i>
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Footer Bottom */}
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <p>
-              &copy; {new Date().getFullYear()} All rights reserved | Developed
-              & Designed by{" "}
-              <a
-                href="https://buildzoneit.com"
-                target="_blank"
-                rel="noopener noreferrer"
+      </div>
+      <div
+        className="container-fluid text-white"
+        style={{ background: "#061429" }}
+      >
+        <div className="container text-center">
+          <div className="row justify-content-end">
+            <div className="col-lg-8 col-md-6">
+              <div
+                className="d-flex align-items-center justify-content-center"
+                style={{ height: 75 }}
               >
-                BuildZone IT Solutions
-              </a>
-            </p>
+                <p className="mb-0">
+                  &copy;{" "}
+                  <a className="text-white border-bottom" href="#">
+                    Your Site Name
+                  </a>
+                  . All Rights Reserved. Designed by{" "}
+                  <a
+                    className="text-white border-bottom"
+                    href="https://htmlcodex.com"
+                  >
+                    HTML Codex
+                  </a>
+                </p>
+                <br />
+                Distributed By:{" "}
+                <a
+                  className="border-bottom"
+                  href="https://themewagon.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ThemeWagon
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </>
   );
 };
 

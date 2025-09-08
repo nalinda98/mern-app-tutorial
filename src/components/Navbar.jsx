@@ -2,186 +2,174 @@ import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const path = useLocation().pathname;
-  const toggleNavbar = () => setIsNavOpen(!isNavOpen);
-
-  // Helper to close nav on link click
-  const handleNavLinkClick = () => {
-    setIsNavOpen(false);
-  };
-
-  const handleDropdownToggle = () => setIsDropdownOpen((open) => !open);
-  const handleDropdownClose = () => setIsDropdownOpen(false);
-
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light">
-      <div className="container">
-        <img
-          src="/images/logo.png"
-          alt="Kandy Tours Logo"
-          className="logo"
-          style={{
-            width: "70px",
-            height: "70px",
-            marginRight: "10px",
-            cursor: "pointer",
-          }}
-          onClick={() => {
-            handleNavLinkClick();
-            window.location.href = "/";
-          }}
-        />
-        <NavLink to="/" className="navbar-brand">
-          Kandy Tours<span>Travel Agency</span>
-        </NavLink>
-
+    <div className="container-fluid position-relative p-0">
+      <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="/" className="navbar-brand p-0">
+          <h1 className="m-0">
+            <i className="fa fa-user-tie me-2"></i>Startup
+          </h1>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
-          onClick={toggleNavbar}
-          aria-label="Toggle navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
         >
-          <span className="fa fa-bars"></span> Menu
+          <span className="fa fa-bars"></span>
         </button>
-
-        <div
-          className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
-          id="ftco-nav"
-        >
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                className="nav-link"
-                activeClassName="active"
-                onClick={handleNavLinkClick}
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <div className="navbar-nav ms-auto py-0">
+            <a href="/" className="nav-item nav-link active">
+              Home
+            </a>
+            <a href="/about" className="nav-item nav-link">
+              About
+            </a>
+            <a href="/service" className="nav-item nav-link">
+              Services
+            </a>
+            <div className="nav-item dropdown">
+              <a
+                href="#"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
               >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/about"
-                className="nav-link"
-                activeClassName="active"
-                onClick={handleNavLinkClick}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/gallery"
-                className="nav-link"
-                activeClassName="active"
-                onClick={handleNavLinkClick}
-              >
-                Gallery
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/destinations"
-                className="nav-link"
-                activeClassName="active"
-                onClick={handleNavLinkClick}
-              >
-                Destinations
-              </NavLink>
-            </li>
-            <li
-              className={`nav-item dropdown${isDropdownOpen ? " show" : ""}`}
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={handleDropdownClose}
-            >
-              <span
-                className={`nav-link dropdown-toggle${
-                  isDropdownOpen ? " show" : ""
-                }`}
-                id="navbarDropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded={isDropdownOpen}
-                style={{ cursor: "pointer" }}
-                onClick={handleDropdownToggle}
-              >
-                Packages
-              </span>
-              <div
-                className={`dropdown-menu${isDropdownOpen ? " show" : ""}`}
-                aria-labelledby="navbarDropdown"
-              >
-                <NavLink
-                  to="/packages/Tour10Days"
-                  className="dropdown-item"
-                  onClick={() => {
-                    handleNavLinkClick();
-                    handleDropdownClose();
-                  }}
-                >
-                  10 Days Tour
-                </NavLink>
-                <NavLink
-                  to="/packages/Tour6Days"
-                  className="dropdown-item"
-                  onClick={() => {
-                    handleNavLinkClick();
-                    handleDropdownClose();
-                  }}
-                >
-                  6 Days Trinco Tour
-                </NavLink>
-                <NavLink
-                  to="/packages/Tour5Days"
-                  className="dropdown-item"
-                  onClick={() => {
-                    handleNavLinkClick();
-                    handleDropdownClose();
-                  }}
-                >
-                  5 Days Nuwaraeliya Tour
-                </NavLink>
-                <NavLink
-                  to="/packages/Tour4Days"
-                  className="dropdown-item"
-                  onClick={() => {
-                    handleNavLinkClick();
-                    handleDropdownClose();
-                  }}
-                >
-                  4 Days Sigiriya Tour
-                </NavLink>
-              </div>
-            </li>
-            {/* Future Links
-            <li className="nav-item">
-              <NavLink to="/hotel" className="nav-link" activeClassName="active" onClick={handleNavLinkClick}>
-                Hotel
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/blog" className="nav-link" activeClassName="active" onClick={handleNavLinkClick}>
                 Blog
-              </NavLink>
-            </li>
-            */}
-            <li className="nav-item">
-              <NavLink
-                to="/contact"
-                className="nav-link"
-                activeClassName="active"
-                onClick={handleNavLinkClick}
+              </a>
+              <div className="dropdown-menu m-0">
+                <a href="/blog" className="dropdown-item">
+                  Blog Grid
+                </a>
+                <a href="/detail" className="dropdown-item">
+                  Blog Detail
+                </a>
+              </div>
+            </div>
+            <div className="nav-item dropdown">
+              <a
+                href="#"
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
               >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
+                Pages
+              </a>
+              <div className="dropdown-menu m-0">
+                <a href="/price" className="dropdown-item">
+                  Pricing Plan
+                </a>
+                <a href="/feature" className="dropdown-item">
+                  Our features
+                </a>
+                <a href="/team" className="dropdown-item">
+                  Team Members
+                </a>
+                <a href="/testimonial" className="dropdown-item">
+                  Testimonial
+                </a>
+                <a href="/quote" className="dropdown-item">
+                  Free Quote
+                </a>
+              </div>
+            </div>
+            <a href="/contact" className="nav-item nav-link">
+              Contact
+            </a>
+          </div>
+          <button
+            type="button"
+            className="btn text-primary ms-3"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
+            <i className="fa fa-search"></i>
+          </button>
         </div>
+      </nav>
+
+      <div
+        id="header-carousel"
+        className="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
+            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <div className="p-3" style={{ maxWidth: 900 }}>
+                <h5 className="text-white text-uppercase mb-3 animated slideInDown">
+                  Creative & Innovative
+                </h5>
+                <h1 className="display-1 text-white mb-md-4 animated zoomIn">
+                  Creative & Innovative Digital Solution
+                </h1>
+                <a
+                  href="/quote"
+                  className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >
+                  Free Quote
+                </a>
+                <a
+                  href="/contact"
+                  className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
+            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <div className="p-3" style={{ maxWidth: 900 }}>
+                <h5 className="text-white text-uppercase mb-3 animated slideInDown">
+                  Creative & Innovative
+                </h5>
+                <h1 className="display-1 text-white mb-md-4 animated zoomIn">
+                  Creative & Innovative Digital Solution
+                </h1>
+                <a
+                  href="/quote"
+                  className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >
+                  Free Quote
+                </a>
+                <a
+                  href="/contact"
+                  className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
+    </div>
   );
 };
 

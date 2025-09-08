@@ -29,35 +29,98 @@ const members = [
 
 const Team = () => {
   return (
-    <section className="ftco-section ">
-      <div className="container">
-        <div className="row justify-content-center pb-4">
-          <div className="col-md-8 heading-section text-center" data-aos="fade-up">
-            <span className="subheading">Meet Our Team</span>
-            <h2 className="mb-4">Local Experts & Guides</h2>
+    <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="container py-5">
+          <div
+            className="section-title text-center position-relative pb-3 mb-5 mx-auto"
+            style={{ maxWidth: 600 }}
+          >
+            <h5 className="fw-bold text-primary text-uppercase">
+              Team Members
+            </h5>
+            <h1 className="mb-0">
+              Professional Stuffs Ready to Help Your Business
+            </h1>
           </div>
-        </div>
-        <div className="row justify-content-center">
-          {members.map((member, idx) => (
-            <div className="col-12 col-sm-6 col-lg-3 mb-4 d-flex align-items-stretch" key={idx}>
-              <div className="card shadow-sm w-100 text-center">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="card-img-top rounded-circle mx-auto mt-4"
-                  style={{ width: 120, height: 120, objectFit: "cover" }}
-                />
-                <div className="card-body">
-                  <h5 className="card-title mb-1" style={{ color: "#135c63" }}>{member.name}</h5>
-                  <p className="card-subtitle mb-2 text-muted">{member.role}</p>
-                  <p className="card-text" style={{ fontSize: 15 }}>{member.bio}</p>
+          <div className="row g-5">
+            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+              <div className="team-item bg-light rounded overflow-hidden">
+                <div className="team-img position-relative overflow-hidden">
+                  <img className="img-fluid w-100" src="img/team-1.jpg" alt="" />
+                  <div className="team-social">
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-twitter fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-facebook-f fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-instagram fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-linkedin-in fw-normal"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="text-center py-4">
+                  <h4 className="text-primary">Full Name</h4>
+                  <p className="text-uppercase m-0">Designation</p>
                 </div>
               </div>
             </div>
-          ))}
+            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+              <div className="team-item bg-light rounded overflow-hidden">
+                <div className="team-img position-relative overflow-hidden">
+                  <img className="img-fluid w-100" src="img/team-2.jpg" alt="" />
+                  <div className="team-social">
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-twitter fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-facebook-f fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-instagram fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-linkedin-in fw-normal"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="text-center py-4">
+                  <h4 className="text-primary">Full Name</h4>
+                  <p className="text-uppercase m-0">Designation</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+              <div className="team-item bg-light rounded overflow-hidden">
+                <div className="team-img position-relative overflow-hidden">
+                  <img className="img-fluid w-100" src="img/team-3.jpg" alt="" />
+                  <div className="team-social">
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-twitter fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-facebook-f fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-instagram fw-normal"></i>
+                    </a>
+                    <a className="btn btn-lg btn-primary btn-lg-square rounded" href="">
+                      <i className="fab fa-linkedin-in fw-normal"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="text-center py-4">
+                  <h4 className="text-primary">Full Name</h4>
+                  <p className="text-uppercase m-0">Designation</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
   );
 };
 

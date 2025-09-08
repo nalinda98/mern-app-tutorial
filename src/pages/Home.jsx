@@ -1,198 +1,11 @@
 import React from "react";
-import Topbar from "../components/Topbar";
+import HomepageBlog from "../components/HomepageBlog";
+import Team from "../components/Team";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <>
-      {/* Spinner Start */}
-      {/* <div
-        id="spinner"
-        className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
-        <div className="spinner"></div>
-      </div> */}
-      {/* Spinner End */}
-
-      {/* Topbar Start */}
-      <Topbar />
-      {/* Topbar End */}
-
-      {/* Navbar & Carousel Start */}
-      <div className="container-fluid position-relative p-0">
-        <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-          <a href="/" className="navbar-brand p-0">
-            <h1 className="m-0">
-              <i className="fa fa-user-tie me-2"></i>Startup
-            </h1>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span className="fa fa-bars"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav ms-auto py-0">
-              <a href="/" className="nav-item nav-link active">
-                Home
-              </a>
-              <a href="/about" className="nav-item nav-link">
-                About
-              </a>
-              <a href="/service" className="nav-item nav-link">
-                Services
-              </a>
-              <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Blog
-                </a>
-                <div className="dropdown-menu m-0">
-                  <a href="/blog" className="dropdown-item">
-                    Blog Grid
-                  </a>
-                  <a href="/detail" className="dropdown-item">
-                    Blog Detail
-                  </a>
-                </div>
-              </div>
-              <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Pages
-                </a>
-                <div className="dropdown-menu m-0">
-                  <a href="/price" className="dropdown-item">
-                    Pricing Plan
-                  </a>
-                  <a href="/feature" className="dropdown-item">
-                    Our features
-                  </a>
-                  <a href="/team" className="dropdown-item">
-                    Team Members
-                  </a>
-                  <a href="/testimonial" className="dropdown-item">
-                    Testimonial
-                  </a>
-                  <a href="/quote" className="dropdown-item">
-                    Free Quote
-                  </a>
-                </div>
-              </div>
-              <a href="/contact" className="nav-item nav-link">
-                Contact
-              </a>
-            </div>
-            <button
-              type="button"
-              className="btn text-primary ms-3"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i className="fa fa-search"></i>
-            </button>
-            <a
-              href="https://htmlcodex.com/startup-company-website-template"
-              className="btn btn-primary py-2 px-4 ms-3"
-            >
-              Download Pro Version
-            </a>
-          </div>
-        </nav>
-
-        <div
-          id="header-carousel"
-          className="carousel slide carousel-fade"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: 900 }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
-                    Creative & Innovative
-                  </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative & Innovative Digital Solution
-                  </h1>
-                  <a
-                    href="/quote"
-                    className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                  >
-                    Free Quote
-                  </a>
-                  <a
-                    href="/contact"
-                    className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: 900 }}>
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">
-                    Creative & Innovative
-                  </h5>
-                  <h1 className="display-1 text-white mb-md-4 animated zoomIn">
-                    Creative & Innovative Digital Solution
-                  </h1>
-                  <a
-                    href="/quote"
-                    className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                  >
-                    Free Quote
-                  </a>
-                  <a
-                    href="/contact"
-                    className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
-                  >
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#header-carousel"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#header-carousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      {/* Navbar & Carousel End */}
-
       {/* Full Screen Search Start */}
       <div className="modal fade" id="searchModal" tabIndex="-1">
         <div className="modal-dialog modal-fullscreen">
@@ -562,66 +375,6 @@ const Home = () => {
       </div>
       {/* Service End */}
 
-      {/* Pricing Plan Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
-          <div
-            className="section-title text-center position-relative pb-3 mb-5 mx-auto"
-            style={{ maxWidth: 600 }}
-          >
-            <h5 className="fw-bold text-primary text-uppercase">
-              Pricing Plans
-            </h5>
-            <h1 className="mb-0">
-              We are Offering Competitive Prices for Our Clients
-            </h1>
-          </div>
-          <div className="row g-0">
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-              <div className="bg-light rounded">
-                <div className="border-bottom py-4 px-5 mb-4">
-                  <h4 className="text-primary mb-1">Basic Plan</h4>
-                  <small className="text-uppercase">
-                    For Small Size Business
-                  </small>
-                </div>
-                <div className="p-5 pt-0">
-                  <h1 className="display-5 mb-3"></h1>
-                  <div className="d-flex justify-content-between mb-3">
-                    <span>HTML5 &amp; CSS3</span>
-                    <i className="fa fa-check text-primary pt-1"></i>
-                  </div>
-                  <div className="d-flex justify-content-between mb-3">
-                    <span>Bootstrap v5</span>
-                    <i className="fa fa-check text-primary pt-1"></i>
-                  </div>
-                  <div className="d-flex justify-content-between mb-3">
-                    <span>Responsive Layout</span>
-                    <i className="fa fa-times text-danger pt-1"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-              <div
-                className="bg-white rounded shadow position-relative"
-                style={{ zIndex: 1 }}
-              >
-                <div className="border-bottom py-4 px-5 mb-4"></div>
-                <div className="p-5 pt-0"></div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-              <div className="bg-light rounded">
-                <div className="border-bottom py-4 px-5 mb-4"></div>
-                <div className="p-5 pt-0"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Pricing Plan End */}
-
       {/* Quote Start */}
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container py-5">
@@ -701,7 +454,10 @@ const Home = () => {
                   style={{ width: 60, height: 60 }}
                   alt="Testimonial 1"
                 />
-                <div className="ps-4"></div>
+                <div className="ps-4">
+                  <h4 className="text-primary mb-1">Client Name</h4>
+                  <small className="text-uppercase">Profession</small>
+                </div>
               </div>
               <div className="pt-4 pb-5 px-5">
                 Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
@@ -716,7 +472,10 @@ const Home = () => {
                   style={{ width: 60, height: 60 }}
                   alt="Testimonial 2"
                 />
-                <div className="ps-4"></div>
+                <div className="ps-4">
+                  <h4 className="text-primary mb-1">Client Name</h4>
+                  <small className="text-uppercase">Profession</small>
+                </div>
               </div>
               <div className="pt-4 pb-5 px-5">
                 Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
@@ -731,7 +490,10 @@ const Home = () => {
                   style={{ width: 60, height: 60 }}
                   alt="Testimonial 3"
                 />
-                <div className="ps-4"></div>
+                <div className="ps-4">
+                  <h4 className="text-primary mb-1">Client Name</h4>
+                  <small className="text-uppercase">Profession</small>
+                </div>
               </div>
               <div className="pt-4 pb-5 px-5">
                 Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
@@ -746,7 +508,10 @@ const Home = () => {
                   style={{ width: 60, height: 60 }}
                   alt="Testimonial 4"
                 />
-                <div className="ps-4"></div>
+                <div className="ps-4">
+                  <h4 className="text-primary mb-1">Client Name</h4>
+                  <small className="text-uppercase">Profession</small>
+                </div>
               </div>
               <div className="pt-4 pb-5 px-5">
                 Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor
@@ -758,168 +523,9 @@ const Home = () => {
       </div>
       {/* Testimonial End */}
 
-      {/* Team Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
-          <div
-            className="section-title text-center position-relative pb-3 mb-5 mx-auto"
-            style={{ maxWidth: 600 }}
-          >
-            <h5 className="fw-bold text-primary text-uppercase">
-              Team Members
-            </h5>
-            <h1 className="mb-0">
-              Professional Stuffs Ready to Help Your Business
-            </h1>
-          </div>
-          <div className="row g-5">
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden"></div>
-                <div className="text-center py-4"></div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden"></div>
-                <div className="text-center py-4"></div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-              <div className="team-item bg-light rounded overflow-hidden">
-                <div className="team-img position-relative overflow-hidden"></div>
-                <div className="text-center py-4"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Team End */}
+      <Team />
 
-      {/* Blog Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5">
-          <div
-            className="section-title text-center position-relative pb-3 mb-5 mx-auto"
-            style={{ maxWidth: 600 }}
-          >
-            <h5 className="fw-bold text-primary text-uppercase">Latest Blog</h5>
-            <h1 className="mb-0">
-              Read The Latest Articles from Our Blog Post
-            </h1>
-          </div>
-          <div className="row g-5">
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-              <div className="blog-item bg-light rounded overflow-hidden">
-                <div className="blog-img position-relative overflow-hidden"></div>
-                <div className="p-4"></div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-              <div className="blog-item bg-light rounded overflow-hidden">
-                <div className="blog-img position-relative overflow-hidden"></div>
-                <div className="p-4"></div>
-              </div>
-            </div>
-            <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-              <div className="blog-item bg-light rounded overflow-hidden">
-                <div className="blog-img position-relative overflow-hidden"></div>
-                <div className="p-4"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Blog End */}
-
-      {/* Vendor Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5 mb-5">
-          <div className="bg-white">
-            <div className="owl-carousel vendor-carousel">
-              <img src="img/vendor-1.jpg" alt="" />
-              <img src="img/vendor-2.jpg" alt="" />
-              <img src="img/vendor-3.jpg" alt="" />
-              <img src="img/vendor-4.jpg" alt="" />
-              <img src="img/vendor-5.jpg" alt="" />
-              <img src="img/vendor-6.jpg" alt="" />
-              <img src="img/vendor-7.jpg" alt="" />
-              <img src="img/vendor-8.jpg" alt="" />
-              <img src="img/vendor-9.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Vendor End */}
-
-      {/* Footer Start */}
-      <div
-        className="container-fluid bg-dark text-light mt-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-      >
-        <div className="container">
-          <div className="row gx-5">
-            <div className="col-lg-4 col-md-6 footer-about">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                <a href="/" className="navbar-brand"></a>
-                <p className="mt-3 mb-4">
-                  Lorem diam sit erat dolor elitr et, diam lorem justo amet
-                  clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum
-                  sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.
-                </p>
-                <form action=""></form>
-              </div>
-            </div>
-            <div className="col-lg-8 col-md-6">
-              <div className="row gx-5">
-                <div className="col-lg-4 col-md-12 pt-5 mb-5"></div>
-                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5"></div>
-                <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="container-fluid text-white"
-        style={{ background: "#061429" }}
-      >
-        <div className="container text-center">
-          <div className="row justify-content-end">
-            <div className="col-lg-8 col-md-6">
-              <div
-                className="d-flex align-items-center justify-content-center"
-                style={{ height: 75 }}
-              >
-                <p className="mb-0">
-                  &copy;{" "}
-                  <a className="text-white border-bottom" href="#">
-                    Your Site Name
-                  </a>
-                  . All Rights Reserved. Designed by{" "}
-                  <a
-                    className="text-white border-bottom"
-                    href="https://htmlcodex.com"
-                  >
-                    HTML Codex
-                  </a>
-                </p>
-                <br />
-                Distributed By:{" "}
-                <a
-                  className="border-bottom"
-                  href="https://themewagon.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ThemeWagon
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Footer End */}
+      <HomepageBlog />
 
       {/* Back to Top */}
       <a
