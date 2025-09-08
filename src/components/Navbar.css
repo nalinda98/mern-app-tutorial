@@ -1,0 +1,19 @@
+.custom-navbar-collapse {
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  max-height: 0;
+}
+.custom-navbar-collapse.show {
+  max-height: 500px; /* Adjust as needed for your menu height */
+}
+
+nav.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+body {
+  padding-top: 80px;
+}
