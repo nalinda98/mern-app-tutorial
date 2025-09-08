@@ -1,0 +1,30 @@
+.floating-whatsapp {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+}
+
+.floating-icon {
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-icon:hover {
+  background: #128c7e;
+  transform: scale(1.13);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.floating-icon svg {
+  color: #fff;
+  transition: color 1.2s ease; /* slower icon color change */
+}
