@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsTop(window.scrollY < 10);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"
       style={{
-        position: "sticky",
-        top: 0,
+        position: "fixed",
+        top: isTop ? "40px" : "0px", 
+        left: 0,
+        right: 0,
+        width: "100%",
+        background: isTop
+          ? "rgba(9,30,62,0)"
+          : "rgba(255,255,255,1)",
+        transition: "background 0.3s, top 0.3s",
+        zIndex: 1000,
       }}
     >
       <NavLink to="/" className="navbar-brand p-0">

@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <>
       <div className="container-fluid position-relative p-0">
-        
         <div
           id="header-carousel"
           className="carousel slide carousel-fade"
