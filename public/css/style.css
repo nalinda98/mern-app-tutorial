@@ -221,7 +221,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(9, 30, 62, .7);
+    /* background: rgba(9, 30, 62, .7); */
     z-index: 1;
 }
 
@@ -246,6 +246,23 @@ h6,
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 30, 62, 0.7);
+  z-index: 1;
+  pointer-events: none;
+}
+.carousel-item > img {
+  position: relative;
+  z-index: 0;
+}
+.carousel-caption {
+  z-index: 2;
+  position: absolute;
 }
 
 
