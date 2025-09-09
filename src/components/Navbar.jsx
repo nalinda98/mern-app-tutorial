@@ -14,10 +14,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"
+      className={`navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0${!isTop ? " scrolled" : ""}`}
       style={{
         position: "fixed",
-        top: isTop ? "40px" : "0px", 
+        top: isTop ? "40px" : "0px",
         left: 0,
         right: 0,
         width: "100%",
@@ -52,23 +52,9 @@ const Navbar = () => {
           <NavLink to="/service" className="nav-item nav-link">
             Services
           </NavLink>
-          <div className="nav-item dropdown">
-            <span
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              style={{ cursor: "pointer" }}
-            >
-              Blog
-            </span>
-            <div className="dropdown-menu m-0">
-              <NavLink to="/blog" className="dropdown-item">
-                Blog Grid
-              </NavLink>
-              <NavLink to="/detail" className="dropdown-item">
-                Blog Detail
-              </NavLink>
-            </div>
-          </div>
+          <NavLink to="/blog" className="nav-item nav-link">
+            Blog
+          </NavLink>
           <div className="nav-item dropdown">
             <span
               className="nav-link dropdown-toggle"

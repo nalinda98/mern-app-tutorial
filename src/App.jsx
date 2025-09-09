@@ -17,6 +17,8 @@ import { FloatingDock } from "./components/FloatingDock";
 import ScrollToTopButton from "./components/ScrollToTopBtn";
 import Preloader from "./components/Preloader";
 import Topbar from "./components/Topbar";
+import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
 
 // Lazy imports (code-splitting)
 const Home = lazy(() => import("./pages/Home"));
@@ -76,6 +78,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/packages/Tour10Days" element={<Tour10Days />} />

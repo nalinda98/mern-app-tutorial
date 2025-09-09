@@ -214,6 +214,17 @@ h6,
     }
 }
 
+/* Custom active nav-link color based on navbar background */
+.navbar-dark.scrolled .navbar-nav .nav-link.active,
+.navbar-dark.scrolled .navbar-nav .nav-link.show {
+  color: #0d6efd !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show {
+  color: #fff !important;
+}
+
 
 /*** Carousel ***/
 .carousel-caption {
