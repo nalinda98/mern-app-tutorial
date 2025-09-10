@@ -20,6 +20,7 @@ import Topbar from "./components/Topbar";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Service from "./pages/Service";
+import SingleDestination from "./pages/SingleDestination";
 
 // Lazy imports (code-splitting)
 const Home = lazy(() => import("./pages/Home"));
@@ -81,6 +82,10 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/service" element={<Service />} />
+            <Route
+              path="/destination/details/:id1/:id2"
+              element={<SingleDestination />}
+            />
             <Route path="/destinations/:id" element={<Destinations />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/about" element={<About />} />

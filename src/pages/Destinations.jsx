@@ -8,7 +8,6 @@ const Destinations = () => {
     <div>
       <Header title="Destinations" subtitle={"Explore SriLanka"} />
       <TourDestination />
-      {/* <Destination /> */}
     </div>
   );
 };
