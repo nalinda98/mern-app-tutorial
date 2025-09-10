@@ -24,55 +24,34 @@ const HomeImage = () => {
     typeof window !== "undefined" ? window.innerHeight : "100vh";
 
   return (
-    <div
-      className="hero-wrap"
-      style={{
-        backgroundImage: `url("${bgImage}")`,
-        height: fullHeight,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        position: "relative",
-        marginTop: "-70px",
-      }}
-    >
-      <div
-        className="overlay"
-        style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}
-      />
-      <div className="container h-100 d-flex align-items-center">
-        <div className="row no-gutters slider-text w-100 align-items-center">
-          <div className="col-md-7 text-white" data-aos="fade-up">
-            <span className="subheading">Welcome to Ceylon</span>
-            <h1 className="mb-4">Discover Your Favorite Place with Us</h1>
-            <p className="caps">
-              Travel to any corner of the world, without going around in
-              circles.
-            </p>
+    <div className="modal fade" id="searchModal" tabIndex="-1">
+      <div className="modal-dialog modal-fullscreen">
+        <div
+          className="modal-content"
+          style={{ background: "rgba(9, 30, 62, .7)" }}
+        >
+          <div className="modal-header border-0">
+            <button
+              type="button"
+              className="btn bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div
-            className="col-md-5 d-flex justify-content-center"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <Link to="about" smooth={true} duration={1000}>
-              <button
-                onClick={() => setOpen(true)}
-                className="icon-video d-flex align-items-center justify-content-center mb-4 btn btn-light rounded-circle"
-                style={{ width: 60, height: 60 }}
-                aria-label="Play Video"
-              >
-                <span className="fa fa-play" />
+          <div className="modal-body d-flex align-items-center justify-content-center">
+            <div className="input-group" style={{ maxWidth: 600 }}>
+              <input
+                type="text"
+                className="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword"
+              />
+              <button className="btn btn-primary px-4">
+                <i className="bi bi-search"></i>
               </button>
-            </Link>
+            </div>
           </div>
         </div>
       </div>
-      {/* <ModalVideo
-        channel="vimeo"
-        isOpen={isOpen}
-        videoId="45830194"
-        onClose={() => setOpen(false)}
-      /> */}
     </div>
   );
 };

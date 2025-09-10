@@ -61,7 +61,7 @@ const Navbar = () => {
               data-bs-toggle="dropdown"
               style={{ cursor: "pointer" }}
             >
-              Pages
+              Destinations
             </span>
             <div className="dropdown-menu m-0">
               <NavLink to="/price" className="dropdown-item">

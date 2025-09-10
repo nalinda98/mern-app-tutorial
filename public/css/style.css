@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06A3DA;
-    --secondary: #34AD54;
+    --primary: #34AD54;      /* Green */
+    --secondary: #06A3DA;    /* Blue (swap with previous primary) */
     --light: #EEF9FF;
     --dark: #091E3E;
 }
@@ -88,14 +88,25 @@ h6,
 .btn-primary,
 .btn-secondary {
     color: #FFFFFF;
+    background-color: var(--primary);
+    border-color: var(--primary);
     box-shadow: inset 0 0 0 50px transparent;
 }
 
 .btn-primary:hover {
+    background-color: #289043;
+    border-color: #289043;
     box-shadow: inset 0 0 0 0 var(--primary);
 }
 
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
 .btn-secondary:hover {
+    background-color: #057bb0;
+    border-color: #057bb0;
     box-shadow: inset 0 0 0 0 var(--secondary);
 }
 
@@ -217,7 +228,7 @@ h6,
 /* Custom active nav-link color based on navbar background */
 .navbar-dark.scrolled .navbar-nav .nav-link.active,
 .navbar-dark.scrolled .navbar-nav .nav-link.show {
-  color: #0d6efd !important;
+  color: var(--primary) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -445,7 +456,7 @@ h6,
 }
 
 .team-item:hover .team-social {
-    background: rgba(9, 30, 62, .7);
+    background: rgba(52, 173, 84, 0.7); /* Green overlay */
 }
 
 .team-item:hover .team-social a.btn:first-child {
@@ -501,7 +512,7 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(52, 173, 84, .7), rgba(52, 173, 84, .7)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 

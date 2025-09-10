@@ -19,6 +19,7 @@ import Preloader from "./components/Preloader";
 import Topbar from "./components/Topbar";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+import Service from "./pages/Service";
 
 // Lazy imports (code-splitting)
 const Home = lazy(() => import("./pages/Home"));
@@ -79,6 +80,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/service" element={<Service />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/destinations" element={<Destinations />} />
