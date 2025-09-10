@@ -81,9 +81,9 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/service" element={<Service />} />
+            <Route path="/destinations/:id" element={<Destinations />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/about" element={<About />} />
-            <Route path="/destinations" element={<Destinations />} />
             <Route path="/packages/Tour10Days" element={<Tour10Days />} />
             <Route path="/packages/Tour4Days" element={<Tour4Days />} />
             <Route path="/packages/Tour6Days" element={<Tour6Days />} />

@@ -1,9 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import './Navbar.css';
 
 const Navbar = () => {
   const [isTop, setIsTop] = useState(true);
-
+  const destinations = [
+    {
+      name: "West Coastal",
+      subtopics: ["Negombo", "Kalpitiya", "Chilaw"]
+    },
+    {
+      name: "South Coastal",
+      subtopics: ["Galle", "Matara", "Tangalle"]
+    },
+    {
+      name: "East Coastal",
+      subtopics: ["Trincomalee", "Batticaloa", "Arugam Bay"]
+    },
+    {
+      name: "Northen Coastal",
+      subtopics: [
+        "Kilinochchi",
+        "Vavuniya",
+        "Mullaitivu"
+      ]
+    },
+    {
+      name: "Hill Country",
+      subtopics: ["Kandy", "Nuwara Eliya", "Ella", "Haputale"]
+    },
+    {
+      name: "Cultural Triangle",
+      subtopics: ["Anuradhapura", "Polonnaruwa", "Sigiriya", "Dambulla"]
+    }
+  ];
   useEffect(() => {
     const handleScroll = () => {
       setIsTop(window.scrollY < 10);
@@ -52,9 +82,7 @@ const Navbar = () => {
           <NavLink to="/service" className="nav-item nav-link">
             Services
           </NavLink>
-          <NavLink to="/blog" className="nav-item nav-link">
-            Blog
-          </NavLink>
+          
           <div className="nav-item dropdown">
             <span
               className="nav-link dropdown-toggle"
@@ -64,23 +92,54 @@ const Navbar = () => {
               Destinations
             </span>
             <div className="dropdown-menu m-0">
-              <NavLink to="/price" className="dropdown-item">
-                Pricing Plan
-              </NavLink>
-              <NavLink to="/feature" className="dropdown-item">
-                Our features
-              </NavLink>
-              <NavLink to="/team" className="dropdown-item">
-                Team Members
-              </NavLink>
-              <NavLink to="/testimonial" className="dropdown-item">
-                Testimonial
-              </NavLink>
-              <NavLink to="/quote" className="dropdown-item">
-                Free Quote
-              </NavLink>
+              {destinations.map((dest, idx) => (
+                <div className="dropdown-submenu" key={dest.name}>
+                  <span
+                    className="dropdown-item dropdown-toggle"
+                    data-bs-toggle={dest.subtopics ? "dropdown" : undefined}
+                    style={dest.subtopics ? { cursor: "pointer" } : {}}
+                  >
+                    {dest.name}
+                  </span>
+                  {dest.subtopics && (
+                    <div className="dropdown-menu">
+                      {dest.subtopics.map((sub, subIdx) =>
+                        typeof sub === "string" ? (
+                          <NavLink
+                            className="dropdown-item"
+                            key={subIdx}
+                            to={`/destinations/${encodeURIComponent(sub.toLowerCase().replace(/\s+/g, '-'))}`}
+                          >
+                            {sub}
+                          </NavLink>
+                        ) : (
+                          <div className="dropdown-submenu" key={sub.name}>
+                            <span className="dropdown-item dropdown-toggle">{sub.name}</span>
+                            {sub.subtopics && (
+                              <div className="dropdown-menu">
+                                {sub.subtopics.map((deep, deepIdx) => (
+                                  <NavLink
+                                    className="dropdown-item"
+                                    key={deepIdx}
+                                    to={`/destinations/${encodeURIComponent(deep.toLowerCase().replace(/\s+/g, '-'))}`}
+                                  >
+                                    {deep}
+                                  </NavLink>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
+          <NavLink to="/blog" className="nav-item nav-link">
+            Blog
+          </NavLink>
           <NavLink to="/contact" className="nav-item nav-link">
             Contact
           </NavLink>

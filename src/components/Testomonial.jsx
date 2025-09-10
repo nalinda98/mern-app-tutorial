@@ -68,7 +68,7 @@ const dotActiveStyle = `
 }
 .testimonial-carousel .slick-dots li.slick-active div {
   width: 32px !important;
-  background: #0d6efd !important;
+  background: #34AD54 !important;
   border-radius: 6px !important;
 }
 `;
@@ -107,7 +107,7 @@ const Testomonial = () => (
                   alt={t.name}
                 />
                 <div className="ps-4">
-                  <h4 className="text-primary mb-1">{t.name}</h4>
+                  <h4 className="mb-1" style={{ color: "#34AD54" }}>{t.name}</h4>
                   <small className="text-uppercase text-secondary">{t.profession}</small>
                 </div>
               </div>
