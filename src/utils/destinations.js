@@ -20,27 +20,7 @@ const destinations = [
       "Enjoy a meal at one of the many cafes and restaurants.",
     ],
   },
-  {
-    id: "4258",
-    title: "Sigiriya Rock Fortress",
-    city: "Sigiriya",
-    shortDesc:
-      "Sigiriya, also known as Lion Rock, is an ancient rock fortress located in the central Matale District of Sri Lanka. It is a UNESCO World Heritage Site and one of the country's most iconic landmarks. The fortress is renowned for its impressive architecture, stunning frescoes, and well-preserved gardens. Built by King Kasyapa in the 5th century AD, Sigiriya served as a royal palace and military stronghold. Visitors can climb to the summit of the rock to explore the ruins of the palace, enjoy panoramic views of the surrounding landscape, and admire the intricate frescoes that adorn the rock face. Sigiriya is a must-visit destination for history enthusiasts and nature lovers alike.",
-    district: "Matale",
-    description:
-      "Sigiriya Rock Fortress is a marvel of ancient engineering and artistry. The site features a massive rock column that rises nearly 200 meters above the surrounding plains. The fortress complex includes remnants of a royal palace, extensive gardens, water features, and frescoes that depict celestial maidens. The climb to the summit involves ascending a series of staircases and walkways, including a famous section known as the 'Lion's Gate,' where visitors pass through the open jaws of a giant lion sculpture. At the top, visitors can explore the ruins of the palace and enjoy breathtaking views of the lush countryside. Sigiriya is not only a testament to Sri Lanka's rich history but also a symbol of its cultural heritage.",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1234567890123!2d80.75654321098765!3d7.957123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1735b6c7e8e7f%3A0xabcdef1234567890!2sSigiriya%20Rock%20Fortress!5e0!3m2!1sen!2slk!4v1697051234567!5m2!1sen!2slk",
-    image: "s1",
-    bestTime: "February to April",
-    thingsToDo: [
-      "Climb to the summit of Sigiriya Rock.",
-      "Explore the ancient frescoes and murals.",
-      "Wander through the beautifully landscaped gardens.",
-      "Visit the Sigiriya Museum to learn about the site's history.",
-      "Enjoy panoramic views of the surrounding area.",
-      "Take guided tours to understand the historical significance.",
-    ],
-  },
+
   {
     id: "4259",
     title: "Temple of the Tooth",
@@ -258,7 +238,7 @@ const destinations = [
     description:
       "Built during the British colonial period, Iranamadu Tank is a vast irrigation reservoir that supplies water to the Northern Province. The area is popular for its serene beauty, fishing activities, and flocks of migratory birds that gather around the tank during the season.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "iranamadu.jpeg",
     bestTime: "November to March",
     thingsToDo: [
       "Enjoy scenic lakeside views.",
@@ -278,7 +258,7 @@ const destinations = [
     description:
       "The Kilinochchi War Memorial is a site of remembrance that honors those who lost their lives during the civil war. Visitors can see the symbolic monuments and learn about the history of Kilinochchi’s role in Sri Lanka’s recent past.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "kilinochchi.jpeg",
     bestTime: "Year-round",
     thingsToDo: [
       "Visit the memorial and learn about history.",
@@ -298,7 +278,7 @@ const destinations = [
     description:
       "Kanakambikai Amman Kovil is one of Kilinochchi’s prominent Hindu temples, dedicated to Goddess Amman. The temple is beautifully decorated with vibrant sculptures and hosts religious festivals that attract devotees from across the region.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "kovil.jpg",
     bestTime: "During Hindu festival season (August–September)",
     thingsToDo: [
       "Admire the colorful temple architecture.",
@@ -320,7 +300,7 @@ const destinations = [
     description:
       "The Archaeological Museum of Vavuniya houses a collection of ancient Buddhist, Hindu, and Islamic artifacts excavated from the region. Visitors can see stone carvings, pottery, coins, and statues that reflect the cultural history of northern Sri Lanka.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "vavuniya.webp",
     bestTime: "Year-round",
     thingsToDo: [
       "Explore ancient artifacts and sculptures.",
@@ -340,7 +320,7 @@ const destinations = [
     description:
       "Isinbessagala Forest Hermitage is an ancient monastic site that provides a serene environment for meditation and reflection. Surrounded by nature, it has ruins of stupas, caves, and inscriptions dating back to ancient times.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "isinbessagala.JPG",
     bestTime: "December to March",
     thingsToDo: [
       "Meditate in a tranquil forest setting.",
@@ -360,7 +340,7 @@ const destinations = [
     description:
       "Madukanda Vihara is one of the most historically significant temples in the north. Legend states that Prince Siddhartha (before attaining enlightenment as Buddha) rested here during his journey. The temple features an ancient stupa, ruins, and a sacred Bo tree.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "madukanda.webp",
     bestTime: "Year-round",
     thingsToDo: [
       "Visit the historic stupa and ruins.",
@@ -382,7 +362,7 @@ const destinations = [
     description:
       "Mullaitivu Beach is a serene and relatively undiscovered beach destination. With soft sands, turquoise waters, and fewer crowds, it offers a tranquil environment for relaxation and long walks by the ocean.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "mu.JPG",
     bestTime: "March to September",
     thingsToDo: [
       "Relax on the quiet beach.",
@@ -402,7 +382,7 @@ const destinations = [
     description:
       "Nandikadal Lagoon is a scenic and historically important water body in Mullaitivu. It is home to mangrove ecosystems and diverse bird species. The lagoon gained prominence during the final stages of the Sri Lankan civil war, but today it is also valued for its natural beauty.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "nandikadal.jpg",
     bestTime: "November to March",
     thingsToDo: [
       "Go birdwatching near the lagoon.",
@@ -422,7 +402,7 @@ const destinations = [
     description:
       "The Mullaitivu War Museum displays weapons, vehicles, and artifacts from Sri Lanka’s civil conflict. It is a somber but educational place that helps visitors understand the country’s recent history and the events that took place in the region.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "mullaitivu.gif",
     bestTime: "Year-round",
     thingsToDo: [
       "Explore exhibits related to the civil war.",
@@ -443,7 +423,7 @@ const destinations = [
     description:
       "Koneswaram Temple, also known as the Temple of a Thousand Pillars, is one of Sri Lanka’s most important Hindu shrines. Located atop Swami Rock, the temple offers stunning views of the Trincomalee coastline. It is dedicated to Lord Shiva and has a history dating back over 2,000 years.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "tr1.jpg",
     bestTime: "March to August",
     thingsToDo: [
       "Admire the panoramic ocean views from Swami Rock.",
@@ -463,7 +443,7 @@ const destinations = [
     description:
       "Nilaveli Beach is one of Sri Lanka’s most beautiful beaches, famous for its soft white sands and turquoise waters. Located just north of Trincomalee, it is an ideal spot for swimming, snorkeling, and boat trips to nearby Pigeon Island, a marine national park.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "tr2.jpg",
     bestTime: "April to September",
     thingsToDo: [
       "Relax on the white sandy beach.",
@@ -483,7 +463,7 @@ const destinations = [
     description:
       "Fort Frederick is a 17th-century fort located in Trincomalee, originally built by the Portuguese using stones from an ancient Hindu temple. The fort later came under Dutch and British control. Today, visitors can walk around its ramparts, see colonial architecture, and meet friendly wild deer that roam the grounds.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "tr3.jpeg",
     bestTime: "Year-round",
     thingsToDo: [
       "Walk along the fort’s historic ramparts.",
@@ -505,7 +485,7 @@ const destinations = [
     description:
       "Batticaloa Lagoon is a large estuarine lagoon surrounded by mangroves and fishing villages. It is renowned for its folklore about ‘singing fish’, which produce musical sounds in the water. Visitors can take boat rides, enjoy birdwatching, and experience the traditional fishing culture of the east coast.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "b3.jpg",
     bestTime: "April to September",
     thingsToDo: [
       "Take a boat ride across the lagoon.",
@@ -524,7 +504,7 @@ const destinations = [
     description:
       "Batticaloa Fort was originally built by the Portuguese in 1628, later expanded by the Dutch and British. The fort is located at the edge of Batticaloa Lagoon, with well-preserved bastions and a peaceful environment. Today, it houses government offices but is open for visitors to walk around.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "b2.JPG",
     bestTime: "Year-round",
     thingsToDo: [
       "Walk along the fort’s ramparts.",
@@ -536,7 +516,7 @@ const destinations = [
   },
   {
     id: "4324",
-    title: "Kallady Beach",
+    title: "Kallady",
     city: "Batticaloa",
     district: "Batticaloa",
     shortDesc:
@@ -544,7 +524,7 @@ const destinations = [
     description:
       "Kallady Beach is a tranquil beach on the east coast of Sri Lanka, located close to Batticaloa town. It is a great spot for swimming, relaxing, and enjoying sunrise views. The beach is also famous for its friendly fishing communities and traditional catamaran boats.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "b1.JPG",
     bestTime: "April to September",
     thingsToDo: [
       "Relax and swim in the calm waters.",
@@ -554,7 +534,26 @@ const destinations = [
       "Enjoy a picnic by the beach.",
     ],
   },
-
+  {
+    id: "4500",
+    title: "Kattankudy Mosque",
+    city: "Batticaloa",
+    district: "Batticaloa",
+    shortDesc:
+      "A prominent mosque in Batticaloa, known for its beautiful architecture and community significance.",
+    description:
+      "Kattankudy Mosque is one of the largest and most significant mosques in the Batticaloa region. It serves as a central place of worship for the local Muslim community and is known for its intricate architectural design. The mosque plays an important role in the cultural and religious life of the area.",
+    map: "https://www.google.com/maps/embed?...",
+    image: "b4.jpg",
+    bestTime: "Year-round",
+    thingsToDo: [
+      "Admire the mosque's architecture.",
+      "Learn about the local Muslim culture.",
+      "Attend a prayer session if permitted.",
+      "Explore the surrounding Kattankudy area.",
+      "Take photographs of the mosque exterior.",
+    ],
+  },
   // --- East Coastal: Arugam Bay ---
   {
     id: "4325",
@@ -566,7 +565,7 @@ const destinations = [
     description:
       "Arugam Bay Beach is one of the top surfing destinations in the world, attracting surfers from across the globe. Beyond surfing, it’s a laid-back coastal paradise with cafes, yoga retreats, and vibrant nightlife, making it a hub for backpackers and travelers.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "aru.jpg",
     bestTime: "April to October (surfing season)",
     thingsToDo: [
       "Surf world-class waves.",
@@ -586,7 +585,7 @@ const destinations = [
     description:
       "Kudumbigala Monastery, dating back to 2nd century BC, is a secluded Buddhist site with over 200 caves used by monks. The main stupa, perched on a rocky hill, offers panoramic views of the surrounding jungle and coastline. It’s a perfect blend of history, spirituality, and nature.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "kudumbi.jpg",
     bestTime: "Year-round",
     thingsToDo: [
       "Climb to the stupa for panoramic views.",
@@ -606,7 +605,7 @@ const destinations = [
     description:
       "Lahugala National Park is one of Sri Lanka’s smallest but most important national parks, located close to Arugam Bay. It is an elephant corridor, making it a great place to see wild elephants, especially around its reservoirs. The park also supports diverse bird species.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "lahugala.jpg",
     bestTime: "June to September",
     thingsToDo: [
       "Go on a jeep safari.",
