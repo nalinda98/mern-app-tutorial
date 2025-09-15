@@ -810,7 +810,7 @@ const destinations = [
     description:
       "The Royal Botanical Gardens in Peradeniya, near Kandy, span over 147 acres and are home to more than 4,000 species of plants. Visitors can explore themed gardens, including the Orchid House, Palm Avenue, and Spice Garden. It’s a perfect destination for nature lovers and photography enthusiasts.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "royal.JPG",
     bestTime: "January to April",
     thingsToDo: [
       "Explore the Orchid House with rare species.",
@@ -830,7 +830,7 @@ const destinations = [
     description:
       "Built in 1807 by King Sri Wickrama Rajasinghe, Kandy Lake is a serene body of water located next to the Temple of the Tooth. Surrounded by lush trees and a walking path, the lake is ideal for evening strolls and enjoying the peaceful ambiance of the city.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "kandy.jpg",
     bestTime: "Year-round",
     thingsToDo: [
       "Take an evening walk around the lake.",
@@ -850,7 +850,7 @@ const destinations = [
     description:
       "Udawattakele Forest Reserve, located behind the Temple of the Tooth, is a lush green sanctuary that was once a royal forest. It features walking trails, meditation caves, and a rich variety of flora and fauna. It’s a hidden gem for nature walks and birdwatching.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "udawa.jpg",
     bestTime: "January to March",
     thingsToDo: [
       "Hike along forest trails.",
@@ -872,7 +872,7 @@ const destinations = [
     description:
       "Gregory Lake, built during the British colonial era, is one of the main attractions in Nuwara Eliya. Surrounded by green hills, it offers activities like paddle boating, horse rides, and lakeside picnics. It’s a popular spot for families and couples alike.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "gre.jpg",
     bestTime: "March to May",
     thingsToDo: [
       "Take a boat ride on the lake.",
@@ -892,7 +892,7 @@ const destinations = [
     description:
       "Hakgala Botanical Garden is the second-largest garden in Sri Lanka, located 10 km from Nuwara Eliya. Known for its stunning rose gardens, fern house, and exotic orchids, it’s set against the Hakgala Rock and offers a refreshing mountain atmosphere.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "haggala.jpg",
     bestTime: "March to April",
     thingsToDo: [
       "Explore the rose garden in full bloom.",
@@ -912,7 +912,7 @@ const destinations = [
     description:
       "Nuwara Eliya is famous as the center of Sri Lanka’s tea industry. Visitors can tour tea estates like Pedro Tea Estate or Labookellie, walk through scenic plantations, and learn how Ceylon tea is produced. Tastings of freshly brewed tea complete the experience.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "tea.webp",
     bestTime: "February to April",
     thingsToDo: [
       "Take guided tea factory tours.",
@@ -934,7 +934,7 @@ const destinations = [
     description:
       "The Nine Arches Bridge, also known as the ‘Bridge in the Sky,’ is one of Sri Lanka’s most iconic landmarks. Built during the British colonial period, it is a 91-meter-long stone bridge with nine arches, located in the midst of scenic tea plantations and jungle.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "ella.jpg",
     bestTime: "January to April",
     thingsToDo: [
       "Watch trains cross the iconic bridge.",
@@ -954,7 +954,7 @@ const destinations = [
     description:
       "Ella Rock is a popular trekking destination in Sri Lanka’s hill country. The trail passes through tea estates, forests, and rocky paths, leading to a summit with sweeping views of the valley below. It’s ideal for adventurous travelers seeking a rewarding hike.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "ellar.jpg",
     bestTime: "December to April",
     thingsToDo: [
       "Hike through scenic tea plantations.",
@@ -974,7 +974,7 @@ const destinations = [
     description:
       "Ravana Falls is one of Sri Lanka’s most famous waterfalls, located a short drive from Ella. The falls cascade from a height of 25 meters, surrounded by lush greenery. According to legend, the site is linked to the ancient Ramayana epic.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "rawana.jpg",
     bestTime: "April to June (rainy season for full flow)",
     thingsToDo: [
       "View the waterfall from roadside stops.",
@@ -996,7 +996,7 @@ const destinations = [
     description:
       "Lipton’s Seat is a stunning viewpoint near Haputale, offering panoramic views of rolling tea plantations and distant mountains. Sir Thomas Lipton, the tea magnate, is said to have enjoyed surveying his estates from this very spot.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "lipton.jpg",
     bestTime: "January to March",
     thingsToDo: [
       "Take a tuk-tuk or hike up to the viewpoint.",
@@ -1016,7 +1016,7 @@ const destinations = [
     description:
       "Adisham Bungalow, built in the 1930s by a British planter, is a charming Tudor-style mansion nestled in Haputale’s hills. Today, it serves as a monastery and museum, featuring antique furniture, English-style gardens, and a library.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "hapu.jpeg",
     bestTime: "Year-round",
     thingsToDo: [
       "Tour the Tudor-style bungalow and museum.",
@@ -1036,7 +1036,7 @@ const destinations = [
     description:
       "Dambatenne Tea Factory, established in 1890 by Sir Thomas Lipton, remains one of the most famous tea factories in Sri Lanka. Visitors can take guided tours to see the tea-making process, from leaf picking to final packaging, and sample fresh Ceylon tea.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "damba.jpg",
     bestTime: "February to April",
     thingsToDo: [
       "Take a guided tea factory tour.",
@@ -1057,7 +1057,7 @@ const destinations = [
     description:
       "Sri Maha Bodhi is the oldest living human-planted tree in the world, planted in 288 BC. It is a major pilgrimage site for Buddhists, surrounded by temples and sacred ponds. Visitors can witness rituals, offer flowers, and soak in the spiritual ambiance.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "sri.webp",
     bestTime: "December to March",
     thingsToDo: [
       "Offer prayers and flowers at the Bo tree.",
