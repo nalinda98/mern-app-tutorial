@@ -9,7 +9,7 @@ const destinations = [
     description:
       "The Dutch Fort in Galle is a sprawling historic site that spans over 130 acres. It was originally built by the Portuguese in 1588 and later extensively fortified by the Dutch during their colonial rule. The fort is a living heritage site, with a vibrant community residing within its walls. Visitors can explore landmarks such as the Galle Lighthouse, the Dutch Reformed Church, and the Maritime Archaeology Museum. The fort also hosts a variety of shops, cafes, and art galleries, making it a hub for both history enthusiasts and modern-day travelers. Its cobblestone streets and colonial-era buildings provide a unique blend of history and culture, making it a must-visit destination in Sri Lanka.",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1234567890123!2d80.21787654321098!3d6.032123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1735b6c7e8e7f%3A0xabcdef1234567890!2sGalle%20Fort!5e0!3m2!1sen!2slk!4v1697051234567!5m2!1sen!2slk",
-    image: "https://placehold.co/600x400",
+    image: "g2.webp",
     bestTime: "December to March",
     thingsToDo: [
       "Explore the historic ramparts and walls of the fort.",
@@ -30,7 +30,7 @@ const destinations = [
     description:
       "Sigiriya Rock Fortress is a marvel of ancient engineering and artistry. The site features a massive rock column that rises nearly 200 meters above the surrounding plains. The fortress complex includes remnants of a royal palace, extensive gardens, water features, and frescoes that depict celestial maidens. The climb to the summit involves ascending a series of staircases and walkways, including a famous section known as the 'Lion's Gate,' where visitors pass through the open jaws of a giant lion sculpture. At the top, visitors can explore the ruins of the palace and enjoy breathtaking views of the lush countryside. Sigiriya is not only a testament to Sri Lanka's rich history but also a symbol of its cultural heritage.",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1234567890123!2d80.75654321098765!3d7.957123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1735b6c7e8e7f%3A0xabcdef1234567890!2sSigiriya%20Rock%20Fortress!5e0!3m2!1sen!2slk!4v1697051234567!5m2!1sen!2slk",
-    image: "https://placehold.co/600x400",
+    image: "s1",
     bestTime: "February to April",
     thingsToDo: [
       "Climb to the summit of Sigiriya Rock.",
@@ -51,7 +51,7 @@ const destinations = [
     description:
       "The Temple of the Tooth is situated within the royal palace complex in Kandy, surrounded by lush gardens and a tranquil lake. The temple's architecture showcases traditional Kandyan style, with ornate wooden carvings and gilded decorations. The main shrine houses the sacred tooth relic, which is kept in a golden casket and is only displayed to the public during special occasions. Visitors can explore the temple grounds, including the museum that provides insights into the history of Buddhism in Sri Lanka. The temple is also known for its vibrant festivals, particularly the Esala Perahera, which features a grand procession of dancers, drummers, and decorated elephants. A visit to the Temple of the Tooth offers a unique blend of spirituality, culture, and history.",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1234567890123!2d80.63654321098765!3d7.290123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1735b6c7e8e7f%3A0xabcdef1234567890!2sTemple%20of%20the%20Tooth!5e0!3m2!1sen!2slk!4v1697051234567!5m2!1sen!2slk",
-    image: "https://placehold.co/600x400",
+    image: "k1.jpg",
     bestTime: "July to August",
     thingsToDo: [
       "Visit the main shrine to see the sacred tooth relic.",
@@ -62,28 +62,6 @@ const destinations = [
       "Enjoy the serene atmosphere and spiritual ambiance.",
     ],
   },
-  {
-    id: "4257",
-    title: "Dutch Fort",
-    city: "Galle",
-    shortDesc:
-      "The Dutch Fort, also known as the Galle Fort, is a historic fortification located in Galle, Sri Lanka...",
-    district: "Galle",
-    description:
-      "The Dutch Fort in Galle is a sprawling historic site that spans over 130 acres...",
-    map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
-    bestTime: "December to March",
-    thingsToDo: [
-      "Explore the historic ramparts and walls of the fort.",
-      "Visit the Galle Lighthouse for panoramic views.",
-      "Discover the Maritime Archaeology Museum.",
-      "Stroll through the charming streets and alleys.",
-      "Shop for souvenirs in local boutiques.",
-      "Enjoy a meal at one of the many cafes and restaurants.",
-    ],
-  },
-
   // --- West Coastal: Negombo ---
   {
     id: "4301",
@@ -95,7 +73,7 @@ const destinations = [
     description:
       "Negombo Beach is one of Sri Lanka's most popular seaside destinations. It offers a lively atmosphere with plenty of beachside cafes, seafood restaurants, and water sports. The wide sandy stretch is perfect for relaxing, swimming, and enjoying breathtaking sunsets over the Indian Ocean.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "n1.webp",
     bestTime: "December to April",
     thingsToDo: [
       "Swim and relax along the sandy beach.",
@@ -115,7 +93,7 @@ const destinations = [
     description:
       "The Negombo Lagoon is a large estuarine lagoon connected to the Indian Ocean. It is surrounded by lush mangroves and traditional fishing villages. Visitors can take boat safaris to explore birdlife, see fishermen at work, and learn about traditional prawn and crab farming.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "n2.jpeg",
     bestTime: "November to March",
     thingsToDo: [
       "Take a lagoon boat safari.",
@@ -135,7 +113,7 @@ const destinations = [
     description:
       "St. Mary's Church in Negombo, built in the late 19th century, is a beautiful Roman Catholic church featuring neoclassical architecture. Its interior is decorated with vibrant religious frescoes that cover the entire ceiling, making it one of the most visited landmarks in the city.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "n3.webp",
     bestTime: "Year-round",
     thingsToDo: [
       "Admire the colorful frescoes on the ceilings.",
@@ -157,7 +135,7 @@ const destinations = [
     description:
       "Kalpitiya Lagoon is a vast coastal water body separated from the Indian Ocean by a sandbar. It is globally recognized as one of the best destinations for kite surfing. The lagoon is also home to pods of dolphins and is a great place for boat safaris and eco-tourism.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "ka1.jpg",
     bestTime: "May to October (kite surfing season)",
     thingsToDo: [
       "Go kite surfing on the lagoon.",
@@ -177,7 +155,7 @@ const destinations = [
     description:
       "Wilpattu National Park, covering nearly 1,300 sq km, is known for its unique 'willus' (natural lakes) scattered throughout the park. The Kalpitiya entrance allows visitors to explore its rich biodiversity, including leopards, elephants, sloth bears, and a wide variety of birds.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "ka2.jpg",
     bestTime: "February to October",
     thingsToDo: [
       "Go on a wildlife safari.",
@@ -197,7 +175,7 @@ const destinations = [
     description:
       "Kalpitiya Dutch Fort, built by the Dutch East India Company in 1667, was a strategic coastal defense structure. The fort is a quadrangular building with bastions and thick ramparts, overlooking the Puttalam Lagoon. Though now partially in ruins, it is a fascinating site for history lovers.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "ka3.jpg",
     bestTime: "Year-round",
     thingsToDo: [
       "Explore the old Dutch architecture.",
@@ -219,7 +197,7 @@ const destinations = [
     description:
       "Munneswaram Temple is one of the most important Hindu temples in Sri Lanka, believed to date back over a thousand years. The temple is a center for religious rituals and hosts the grand Munneswaram Festival every year, attracting thousands of pilgrims and tourists alike.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "m1.jpg",
     bestTime: "August (festival season)",
     thingsToDo: [
       "Attend the Munneswaram Festival.",
@@ -239,7 +217,7 @@ const destinations = [
     description:
       "Anawilundawa Wetland Sanctuary, located between Chilaw and Puttalam, is one of Sri Lanka's six Ramsar wetlands. It is home to over 150 species of birds, along with diverse aquatic flora and fauna. The sanctuary also features ancient man-made reservoirs that support both wildlife and agriculture.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "m2.jpeg",
     bestTime: "November to March",
     thingsToDo: [
       "Birdwatching and photography.",
@@ -259,7 +237,7 @@ const destinations = [
     description:
       "Chilaw Beach offers a quiet and laid-back atmosphere compared to the busier Negombo. It is ideal for long walks, fishing activities, and enjoying sunsets. The beach is lined with coconut palms, making it a perfect spot for relaxation and local seafood experiences.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "m3.jpg",
     bestTime: "December to April",
     thingsToDo: [
       "Walk along the peaceful shoreline.",
@@ -649,7 +627,7 @@ const destinations = [
     description:
       "Built in 1848, the Galle Lighthouse is the oldest operating lighthouse in Sri Lanka. Situated on the ramparts of the Galle Fort, it overlooks the Indian Ocean and is a popular spot for photography and sunset views. The area around the lighthouse is perfect for evening strolls.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "g1.jpg",
     bestTime: "December to March",
     thingsToDo: [
       "Take photos of the iconic lighthouse.",
@@ -669,7 +647,7 @@ const destinations = [
     description:
       "The Japanese Peace Pagoda in Unawatuna, near Galle, was built in 2004 as a symbol of peace and friendship. Located on a hilltop, the gleaming white stupa offers breathtaking views of the ocean and surrounding jungle. It is a peaceful place for meditation and reflection.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "g3.jpg",
     bestTime: "Year-round",
     thingsToDo: [
       "Climb up to the pagoda for scenic views.",
@@ -689,7 +667,7 @@ const destinations = [
     description:
       "Unawatuna Beach is one of Sri Lanka’s most famous beach destinations, located just a few kilometers from Galle. With calm turquoise waters, golden sands, and vibrant beach bars, it’s perfect for swimming, snorkeling, and enjoying the laid-back coastal vibe.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "g4.webp",
     bestTime: "December to April",
     thingsToDo: [
       "Swim and snorkel in the calm bay.",
@@ -711,7 +689,7 @@ const destinations = [
     description:
       "Paravi Duwa Temple is one of Matara’s most iconic landmarks. Situated on a tiny island in the ocean and connected to the mainland by a bridge, the temple offers a serene setting with panoramic sea views. It’s a peaceful place for worship and meditation.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "m3.webp",
     bestTime: "Year-round",
     thingsToDo: [
       "Walk across the bridge to the temple island.",
@@ -730,7 +708,7 @@ const destinations = [
     description:
       "Matara Fort was built by the Portuguese and later expanded by the Dutch in the 17th century. The fort features ramparts, bastions, and colonial-era buildings. Today, it houses government offices but remains a historic landmark open to visitors.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "m1.jpeg",
     bestTime: "Year-round",
     thingsToDo: [
       "Walk along the fort’s ramparts.",
@@ -750,7 +728,7 @@ const destinations = [
     description:
       "Polhena Beach, located near Matara town, is famous for its calm waters protected by a coral reef. The shallow waters make it perfect for swimming and snorkeling, and visitors can often spot sea turtles grazing near the reef.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "m2.webp",
     bestTime: "December to April",
     thingsToDo: [
       "Swim in calm, reef-protected waters.",
@@ -772,7 +750,7 @@ const destinations = [
     description:
       "Tangalle Beach is one of the most beautiful beaches on Sri Lanka’s southern coast. Known for its wide sandy shores and laid-back vibe, it’s perfect for swimming, relaxing, and enjoying peaceful sunsets. The town also offers beachside cafes and boutique resorts.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "t2.webp",
     bestTime: "December to April",
     thingsToDo: [
       "Relax on the quiet golden sands.",
@@ -792,7 +770,7 @@ const destinations = [
     description:
       "Mulkirigala Rock Temple, also known as ‘Little Sigiriya,’ is an ancient Buddhist site built on a large rock outcrop. The temple complex has several cave shrines, murals, and a stupa at the summit, offering panoramic views of the surrounding countryside.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "t1.jpg",
     bestTime: "Year-round",
     thingsToDo: [
       "Climb the rock to visit cave shrines.",
@@ -812,7 +790,7 @@ const destinations = [
     description:
       "Rekawa Beach is one of the best places in Sri Lanka to see sea turtles coming ashore to lay eggs. The Rekawa Turtle Conservation Project organizes guided night tours to watch this natural phenomenon responsibly. It’s a must-visit for wildlife enthusiasts.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "t3.jpg",
     bestTime: "April to July (nesting season)",
     thingsToDo: [
       "Join a turtle-watching night tour.",

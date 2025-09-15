@@ -34,7 +34,7 @@ const TourDestination = () => {
                 <div
                   className="card-img-top"
                   style={{
-                    backgroundImage: `url(${dest.image})`,
+                    backgroundImage: `url(/img/destinations/${dest.image})`,
                     height: "180px",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
