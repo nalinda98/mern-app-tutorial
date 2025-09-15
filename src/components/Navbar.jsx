@@ -15,7 +15,7 @@ const Navbar = () => {
     },
     {
       name: "East Coastal",
-      subtopics: ["Trincomalee", "Batticaloa", "Arugam Bay"]
+      subtopics: ["Trincomalee", "Batticaloa", "ArugamBay"]
     },
     {
       name: "Northen Coastal",

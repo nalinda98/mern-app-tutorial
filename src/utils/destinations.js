@@ -558,7 +558,7 @@ const destinations = [
   {
     id: "4325",
     title: "Arugam Bay Beach",
-    city: "Arugam Bay",
+    city: "ArugamBay",
     district: "Ampara",
     shortDesc:
       "Sri Lanka’s surf capital, known for world-class waves and a lively beach vibe.",
@@ -1077,7 +1077,7 @@ const destinations = [
     description:
       "Ruwanwelisaya Stupa is a sacred site for Buddhists and an iconic landmark in Anuradhapura. The stupa is enormous and whitewashed, representing ancient Sinhalese engineering and devotion. Visitors can walk around the stupa and observe the sacred relics inside.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "ruwanweli.jpg",
     bestTime: "January to April",
     thingsToDo: [
       "Circumambulate the stupa in a clockwise direction.",
@@ -1097,7 +1097,7 @@ const destinations = [
     description:
       "Jetavanaramaya is an ancient Buddhist stupa standing at over 120 meters tall, showcasing the grandeur of ancient Sri Lankan architecture. Visitors can explore its base, learn about the history of its construction, and enjoy the surrounding archaeological sites.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "jetha.webp",
     bestTime: "January to March",
     thingsToDo: [
       "Explore the stupa and surrounding ruins.",
@@ -1119,7 +1119,7 @@ const destinations = [
     description:
       "Gal Vihara is an ancient rock temple featuring four magnificent Buddha statues carved from a single granite rock. Built during the reign of King Parakramabahu I, it showcases classical Sinhalese sculpture and artistry. Visitors can admire the craftsmanship and serene surroundings.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "GettyImages-546421195_full.jpg",
     bestTime: "December to March",
     thingsToDo: [
       "View the reclining, standing, and seated Buddha statues.",
@@ -1139,7 +1139,7 @@ const destinations = [
     description:
       "Parakrama Samudra is a massive man-made reservoir, an engineering marvel of the 12th century. It provided water for agriculture and settlements in the region. Visitors can enjoy boat rides, birdwatching, and sunset views over the water.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "parakrama.jpg",
     bestTime: "January to April",
     thingsToDo: [
       "Take a boat ride on the reservoir.",
@@ -1159,7 +1159,7 @@ const destinations = [
     description:
       "The Vatadage in Polonnaruwa is an ancient structure built to enclose a small stupa or relic. It features stone carvings of lions, elephants, and floral patterns. Visitors can explore the central stupa, climb the steps, and admire the craftsmanship.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "watadage.jpg",
     bestTime: "January to March",
     thingsToDo: [
       "Explore the circular relic house and carvings.",
@@ -1181,7 +1181,7 @@ const destinations = [
     description:
       "Sigiriya Rock Fortress, also known as Lion Rock, was built by King Kasyapa in the 5th century. The complex includes water gardens, frescoes of celestial maidens, and the famous Lion’s Gate. Visitors climb the rock to view the ruins and enjoy breathtaking scenery.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "S1.jpg",
     bestTime: "February to April",
     thingsToDo: [
       "Climb to the top for panoramic views.",
@@ -1201,7 +1201,7 @@ const destinations = [
     description:
       "Pidurangala Rock is a lesser-known trekking spot near Sigiriya that provides a spectacular view of the Sigiriya Rock Fortress, especially at sunrise. The climb is moderate and passes through ancient ruins and lush jungle.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "pidu.jpg",
     bestTime: "December to March",
     thingsToDo: [
       "Hike to the summit for sunrise views.",
@@ -1221,7 +1221,7 @@ const destinations = [
     description:
       "The Sigiriya Museum offers insight into the history, archaeology, and architecture of Sigiriya. It displays artifacts, models, and information panels about the rock fortress, frescoes, and water gardens. Visitors gain a deeper understanding before or after climbing the rock.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "sigiri.jpg",
     bestTime: "Year-round",
     thingsToDo: [
       "Learn about the history and architecture of Sigiriya.",
@@ -1243,7 +1243,7 @@ const destinations = [
     description:
       "Dambulla Cave Temple, also known as the Golden Temple of Dambulla, consists of five main caves filled with Buddha statues, murals, and intricate artwork dating back over 2,000 years. It is one of Sri Lanka’s most important Buddhist pilgrimage sites.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "cave.jpg",
     bestTime: "December to March",
     thingsToDo: [
       "Explore the five cave temples and murals.",
@@ -1263,7 +1263,7 @@ const destinations = [
     description:
       "The Golden Temple Stupa is part of the Dambulla cave temple complex, featuring a large golden stupa that dominates the hilltop. Pilgrims and tourists visit to pay respects and admire the stunning view of the surrounding plains.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "Dambulla-Cave-Temple.jpg",
     bestTime: "December to March",
     thingsToDo: [
       "Pay respects at the stupa and surrounding shrines.",
@@ -1283,7 +1283,7 @@ const destinations = [
     description:
       "Minneriya National Park, near Dambulla, is famous for the annual ‘Gathering’ of hundreds of elephants at the Minneriya reservoir. Visitors can enjoy safari tours, wildlife photography, and spot leopards, deer, and birds in their natural habitat.",
     map: "https://www.google.com/maps/embed?...",
-    image: "https://placehold.co/600x400",
+    image: "minneri.jpg",
     bestTime: "July to September",
     thingsToDo: [
       "Go on a jeep safari to see elephants and wildlife.",
